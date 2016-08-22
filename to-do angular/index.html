@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to-do application using angular</title>
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style.css">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+	 <script src="app.js"></script>
+</head>
+	<body class="container text-center" ng-app="mainapp">
+	<h1>To-do application</h1>
+		<div class="col-xs-11 col-xs-offset-0 col-md-6 col-md-offset-3" ng-controller="listCtrl as list"> 
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Enter to do" ng-model=list.todo_data ng-keypress="($event.which === 13 )?list.add_to_do():0">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-primary" ng-click="list.add_to_do()">Submitt</button>
+				</span>
+			</div>	
+			<h4 ng-show="list.show_todo">Things to do </h4>
+				<div ng-repeat="todo in list.data">
+					<div class="row">
+  						<div class="col-xs-11 col-xs-offset-0 col-md-6 col-md-offset-3">
+    						<div class="input-group">
+      							<span class="input-group-addon">
+        							<input type="checkbox" ng-model="done">
+      							</span>
+      							<input type="text" class="form-control" ng-model="todo" ng-class="{done:done}">
+
+      							<span class="input-group-btn">
+        							<button class="btn btn-default" ng-show="done" type="button" ng-click="list.delete_todo($index)">Delete!</button>
+      							</span>
+    						</div><!-- /input-group -->
+  						</div><!-- /.col-lg-6 -->
+					</div>
+		</div>
+	</body>
+</html>
