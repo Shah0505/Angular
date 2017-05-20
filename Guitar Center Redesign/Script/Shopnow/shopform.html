@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+        <h3 class="redTextHighlight">Customer Information</h3>
+        <p ng-if="submitted && (myform.$invalid || carddate)" class="redTextHighlight">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Errores have occured see below for more information.
+        </p>
+        <form name="myform" class="form-horizontal body-content" novalidate ng-submit=submit()>
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left" for="firstname">First Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="First Name" name="firstname" 
+                      id="firstname"  ng-model="userDetails.firstname" 
+                      ng-pattern="/^[A-z\s]*$/"
+                      required class="form-control"
+                      ng-class="{'haserror':myform.firstname.$invalid && submitted}">
+                    <span ng-if="myform.firstname.$error.required && submitted" class="redTextHighlight">First name is required</span>
+                    <span ng-if="myform.firstname.$error.pattern && myform.firstname.$touched && submitted" class="redTextHighlight">
+                        Letters only in first name.</span>
+                </div><!--col-sm-10-->  
+                
+                    
+            </div><!--form-group-->
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="lastname">Last Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Last Name" 
+                      ng-model="userDetails.lastname" name="lastname" required
+                      id="lastname" ng-pattern="/^[A-z\s]*$/"
+                     ng-class="{haserror:myform.lastname.$invalid && submitted}">
+                    <span ng-if="myform.lastname.$error.required && submitted" class="redTextHighlight">Last name is required</span>
+                    <span ng-if="myform.lastname.$error.pattern && myform.lastname.$touched && submitted" class="redTextHighlight">
+                        Letters only in Last name.</span>
+                </div><!--col-sm-10--> 
+            </div><!--form-group-->
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left" for="email">Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" placeholder="Email" class="form-control" ng-model="userDetails.email"
+                       ng-pattern="/^([A-Za-z0-9_\-\.])+\@(?!(?:[A-Za-z0-9_\-\.]+\.)?([A-Za-z]{2,4})\.\2)([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/"  id="email" required name="email"
+                       ng-class="{haserror:myform.email.$invalid && submitted }">
+                    <span ng-if="myform.email.$error.required && submitted" class="redTextHighlight">Email is required</span>
+                    <span ng-if="myform.email.$error.pattern && myform.email.$touched && submitted" class="redTextHighlight">Invalid Email</span>
+                </div><!--col-sm-10--> 
+            </div><!--form-group-->
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="contactno">Number:</label>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="Contact-Number" name="contactno" ng-model="userDetails.contactno" class="form-control"
+                       ng-pattern="/^\d{10}$/" id="contactno"
+                       ng-class="{haserror:myform.contactno.$invalid && submitted}"
+                       required>
+                    <span ng-if="myform.contactno.$error.required && submitted" class="redTextHighlight">Contact No is required</span>
+                    <span ng-if="myform.contactno.$error.pattern && myform.contactno.$touched && submitted" class="redTextHighlight">
+                        10 Digits only in Contact No.</span>
+                </div><!--col-sm-10--> 
+            </div><!--form-group-->
+            <div class="form-group">
+                    <label class="col-sm-2 control-label" for="">Card-Number:</label>
+                    <div class="col-sm-8">
+                        <input type="text" placeholder="Card-Number" name="cardno" ng-model="userDetails.cardno"
+                           ng-pattern="/^\d{16}$/" class="form-control"
+                           ng-class="{haserror:myform.cardno.$invalid && submitted}"
+                            required>
+                        <span ng-if="myform.cardno.$error.required && submitted" class="redTextHighlight">Card No is required</span>
+                        <span ng-if="myform.cardno.$error.pattern && myform.cardno.$touched && submitted" class="redTextHighlight">
+                            16 Digits only in Card No.</span>
+       
+                    </div>
+                      <!--col-sm-10-->        
+                </div><!--form-group-->
+            <div class="form-group">
+                <label for="exmm" class="control-label col-sm-2">Expiry Date:</label>
+                <div class="col-sm-10">
+                    <div class="col-xs-4 col-md-2 col-md-offset-2 form-group exdate">
+                        <input type="text" name="exmm" class="form-control" ng-model="userDetails.exmm" placeholder="mm" 
+                           ng-pattern="/^\d{2}$/" ng-class="{haserror:(myform.exmm.$invalid || carddate ) && submitted}"
+                           required>
+                    </div>
+                    <div class="col-xs-4 col-md-2 form-group exdate">
+                        <input type="text" name="exyy" class="form-control" ng-model="userDetails.exyy" placeholder="yy" 
+                            ng-pattern="/^\d{2}$/" ng-class="{haserror:(myform.exyy.$invalid || carddate) && submitted}"
+                            ng-blur="carddatev(exmm,exyy)"
+                           required>
+                    </div>
+                    <span ng-if="(myform.exmm.$error.required || myform.exyy.$error.required) && submitted" class="redTextHighlight">
+                        Expiry Date is required</span>
+                    <span ng-if="carddate && submitted && myform.exmm.$touched && myform.exyy.$touched " class="redTextHighlight">
+                        Card is Expired.</span>
+                </div><!--col-sm-10-->
+            </div><!--form-group-->
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="address">Address:</label>
+                <div class="col-sm-8">
+                    <textarea placeholder="Shipping Address" name="address" class="form-control" ng-model="userDetails.address" 
+                          ng-class="{haserror:myform.address.$invalid && submitted}"
+                          required></textarea>
+                    <span ng-if="myform.address.$invalid && submitted" class="redTextHighlight">Address is required.</span>
+                </div><!--col-sm-8-->    
+            </div><!--form-group-->         
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8 checkbox">
+                <label>
+                    <input type="checkbox" ng-model="terms" name="terms" required ng-class="{haserror:myform.terms.$invalid && submitted}">I Agree the terms and condition.                    
+                </label>
+                    <div ng-if="myform.terms.$invalid && submitted" class="redTextHighlight">Please accept terms and conditions.</div>
+                </div><!--col-sm-8-->
+            </div><!--form-group-->
+            <div class="pull-right col-sm-4 form-group">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+                
+            </form>
+        </div>
+    </div><!--row-->
+</div><!--container-fluid-->            

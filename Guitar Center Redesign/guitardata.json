@@ -1,0 +1,105 @@
+{
+    "allProducts": [
+        {
+            "productdiscription": "This are one of several Squier models available that offer a pretty good product for a reasonably low price. The pick-ups and hardware are sometimes suspect, and the workmanship varies from instrument to instrument, but for the price, these are a very good beginner guitar choice.",
+            "shippingdetails": "charges for shipping $20",
+            "custmerreviews": " Hmm...well, sounds like a tele at low volumes...the higher the volume, the worse the squeals;like a pig really...ah well, it's a cheap guitar...also tends to rattle above the 10th fret; on the 1st and 2nd strings (to the point of fretting out completely); and on the 5 and 6 stings on the 1st through 3rd frets...weird...action; settings help, but not much...hard to set the intonation as well (read, damn near impossible)... ",
+            "price": "$204.99",
+            "imagepath": ["Images/guitar1.jpg","Images/guitar2.png","Images/guitar3.png"],
+            "stockavailability": "true",
+            "noofitems": "10",
+            "name":"Washburn WA90CE Dreadnought Acoustic Electric Guitar Vintage Tobacco Sunburst"
+        },
+        
+        {
+            "productdiscription": "These Canadian-made instruments are terrific guitars - very highly regarded, both for their beautiful sound, and their excellent value. The S6 features a solid cedar top, and mahogany back and sides. ",
+            "shippingdetails": "charges for shipping $20",
+            "custmerreviews": " It's a solid guitar and it's great for a beginner; It feels very sturdy; On the negative side one of the pickups is kind of wobbly; Buy a Squier Standard if you want something better than an Affinity (even cheaper); but don't have the money for a regular Fender. ",
+            "price": "$419.99",
+            "imagepath": ["Images/guitar21.jpg","Images/guitar22.png"],
+            "stockavailability": "true",
+            "noofitems": "12",
+            "name":"Epiphone Limited Edition LP Junior Transparent Blue"
+        },
+        {
+            "productdiscription": "Modelled after the much more expensive Gibson SG guitars, the Epiphone SG G310 keeps it's cost low by using cheaper hardware and lower quality humbucking pick-ups. The G-310 features an alder body, a mahogany neck, and a dot-inlayed rosewood fingerboard.",
+            "shippingdetails": "charges for shipping $25",
+            "custmerreviews": "  Heck...I bought it as a knock around guitar I could beat up a little as I carried it around with me; (I hate not having a guitar next to me...)...but it hasn't even fit this role very well;I considered putting in new pickups and tuners...but the whole buzzing thing seems impossible to cure;well, there you go...I'm planning to sell it, or failing that; when my new band plays our first show I guess I'll pull a Townsend on it...",
+            "price": "$249.00",
+            "imagepath":["Images/guitar31.png","Images/guitar32.png","Images/guitar33.png","Images/guitar34.png","Images/guitar35.png"],
+            "stockavailability": "true",
+            "noofitems": "14",
+            "name":"Martin Custom Dreadnought Acoustic-Electric Guitar Natural Solid Sitka Spruce"
+        }
+        ,{
+            "productdiscription": "Modelled after the much more expensive Gibson SG guitars, the Epiphone SG G310 keeps it's cost low by using cheaper hardware and lower quality humbucking pick-ups. The G-310 features an alder body, a mahogany neck, and a dot-inlayed rosewood fingerboard.",
+            "shippingdetails": "charges for shipping $25",
+            "custmerreviews": "  Heck...I bought it as a knock around guitar I could beat up a little as I carried it around with me; (I hate not having a guitar next to me...)...but it hasn't even fit this role very well;I considered putting in new pickups and tuners...but the whole buzzing thing seems impossible to cure;well, there you go...I'm planning to sell it, or failing that; when my new band plays our first show I guess I'll pull a Townsend on it...",
+            "price": "$249.00",
+            "imagepath":[ "Images/guitar41.jpg","Images/guitar42.png"],
+            "stockavailability": "true",
+            "noofitems": "14",
+            "name":"Squier Affinity Series Telecaster Special Electric Guitar Butterscotch Blonde"
+        },
+        {
+            "productdiscription": "The Les Paul is perhaps the most famous guitar in rock and roll. Epiphone has done a good job of visually re-creating the Les Paul in this lower-cost guitar marketed towards beginners. The Special II features a laminated alder/maple body, a magogany neck, rosewood fingerboard, and two open-coil humbucking pick-ups.",
+            "shippingdetails": "charges for shipping $15",
+            "custmerreviews": "  Nice tone with use of quality strings, highs are clear and lows are decent; in depth considering this really is a beginner's guitar; Set up must be with quality strings.  No apparent flaws, guitar now 11 years old and still sounds great; Finish is still impeccable. I'm really surprised as I did not expect it to last this long; No apparent flaws, guitar now 11 years old and still sounds great. Finish is still impeccable",
+            "price": "$125.50",
+            "imagepath":["Images/guitar51.jpg","Images/guitar52.jpg","Images/guitar53.jpg","Images/guitar54.jpg","Images/guitar55.jpg","Images/guitar56.jpg","Images/guitar57.jpg"],
+            "stockavailability": "true",
+            "noofitems": "15",
+            "name":"Epiphone ES-339 P90 PRO Semi-Hollowbody Electric Guitar"
+        },
+        {
+            "productdiscription": "These Canadian-made instruments are terrific guitars - very highly regarded, both for their beautiful sound, and their excellent value. The S6 features a solid cedar top, and mahogany back and sides. ",
+            "shippingdetails": "charges for shipping $20",
+            "custmerreviews": " It's a solid guitar and it's great for a beginner; It feels very sturdy; On the negative side one of the pickups is kind of wobbly; Buy a Squier Standard if you want something better than an Affinity (even cheaper); but don't have the money for a regular Fender. ",
+            "price": "$419.99",
+            "imagepath": ["Images/guitar61.png","Images/guitar62.png","Images/guitar63.png","Images/guitar64.png"],
+            "stockavailability": "true",
+            "noofitems": "12",
+            "name":"Rogue LX205B 5-String Series III Electric Bass Guitar"
+        },
+        {
+            "productdiscription": "Perhaps not in the same league as the Seagull, the FG700S is still a solid beginner acoustic guitar, and for the price (significantly cheaper than the S6), it's a good value.",
+            "shippingdetails": "charges for shipping $20",
+            "custmerreviews": "  I think it's a decent value for the money; I've never had any real troubles with it. I'm not an advanced player, I've only been playing for about six months; but this guitar has done me well so far; I'm sure when I get more serious years from now I'll buy something better; but this is fine for now. ",
+            "price": "$199.99",
+            "imagepath":["Images/guitar71.png","Images/guitar72.png","Images/guitar73.png","Images/guitar74.png","Images/guitar75.png"],
+            "stockavailability": "true",
+            "noofitems": "15",
+            "name":"Schecter Guitar Research Raiden Special-5 Electric Bass Guitar"
+        },
+        {
+            "productdiscription": "Modelled after the much more expensive Gibson SG guitars, the Epiphone SG G310 keeps it's cost low by using cheaper hardware and lower quality humbucking pick-ups. The G-310 features an alder body, a mahogany neck, and a dot-inlayed rosewood fingerboard.",
+            "shippingdetails": "charges for shipping $25",
+            "custmerreviews": "  Heck...I bought it as a knock around guitar I could beat up a little as I carried it around with me; (I hate not having a guitar next to me...)...but it hasn't even fit this role very well;I considered putting in new pickups and tuners...but the whole buzzing thing seems impossible to cure;well, there you go...I'm planning to sell it, or failing that; when my new band plays our first show I guess I'll pull a Townsend on it...",
+            "price": "$249.00",
+            "imagepath":["Images/guitar81.png","Images/guitar82.png","Images/guitar83.png","Images/guitar84.png","Images/guitar85.png","Images/guitar86.png","Images/guitar87.png"],
+            "stockavailability": "true",
+            "noofitems": "14",
+            "name":"Martin X Series X1-DE Custom Dreadnought Acoustic-Electric Guitar"
+        },
+        {
+            "productdiscription": "Here's another guitar many people feel is a great value. This Pacifica features an agathis body, maple neck, and rosewood fretboard, with two single coil pick-ups, and one humbucker. The consensus is the guitar is reasonably well made, and the quality of the wood tends to be high.",
+            "shippingdetails": "charges for shipping $18",
+            "custmerreviews": "  yep...those were the pros above...basically this guitar;I guess it might be okay if you need something that looks and feels like a guitar;hmm...well, hit it hard and it chips...no finish flaws though;the tuners suck so bad it's hard to describe...tuning it is a real pain...but it doesn't go out too quickly I guess... ; just to practice on if you don't care what it sounds like at all... ",
+            "price": "$179.99",
+            "imagepath": ["Images/guitar91.png","Images/guitar92.png","Images/guitar93.png","Images/guitar94.png","Images/guitar95.png","Images/guitar96.png"],
+            "stockavailability": "true",
+            "noofitems": "14",
+            "name":"Epiphone Limited Edition Les Paul Special-I Electric Guitar Worn Cherry"
+        },
+        {
+            "productdiscription": "Guitarists like Keith Richards, Steve Cropper, Albert Lee, and Danny Gatton favor the look and sound of the Telecaster. If you're a fan of any of those guitarists, this beginner guitar may be for you. ",
+            "shippingdetails": "charges for shipping $20",
+            "custmerreviews": "It's got a fatter sound to it than a standard strat for obvious reasons.; I only have a couple complaints. First of all, there's a slight buzzing problem on the sixth string; especially if you're not pressing hard. Also, the strings that came on it were very low quality; On several strings I couldn't even get a note below the 12th fret; but I put Elixirs on it and that's fixed.  ",
+            "price": "$150.00",
+            "imagepath":["Images/guitar101.jpg","Images/guitar102.png","Images/guitar103.png","Images/guitar104.png","Images/guitar105.png"],
+            "stockavailability": "true",
+            "noofitems": "10",
+            "name":"Hofner Ignition Series Violin"
+        }
+        ]
+}
