@@ -1,9 +1,11 @@
 /*------Global Styles----------*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Roboto:400,700');
 html,body{
     margin: 0;
     padding: 0;
     width: 100%;
     background: #DBE5E1;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background: #feffff; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
@@ -23,6 +25,9 @@ a{
 }
 a:hover{
     color:#c9302c;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Libre Baskerville', serif;
 }
 /*-------End Global Styles------*/
 
