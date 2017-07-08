@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proteck Guitar Center</title>
+	<link rel="shorcut icon" href="Images/guitarlogo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style/styles.min.css">
+</head>
+<body ng-app="GuitarApp">
+
+<nav ng-controller="headerctrl" class="navbar navbar-inverse" role="navigation">
+    <header my-header navdirectivedata="navdata"></header>
+</nav>
+ 
+    <div ng-view="" class="viewContainer content"></div>
+    
+    <footer ng-include="'templates/footer/footer.html'"></footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.2.js"></script>
+<script src="Script/main.min.js"></script>
+</html>

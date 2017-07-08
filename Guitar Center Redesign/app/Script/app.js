@@ -1,0 +1,36 @@
+angular.module("GuitarApp",["controllermodule","ngRoute",'ui.bootstrap',"ngAnimate"])
+    .config(
+             function($routeProvider){
+      $routeProvider.when("/home",{
+        templateUrl:"../templates/home/home.html",
+        controller:"homecontroller"
+    })
+    .when("/about",{
+        templateUrl:"../templates/about/about.html",
+        controller:"aboutcontroller"
+    })
+    .when("/gridshop",{
+        templateUrl:"../templates/gridlayout/gridlayout.html",
+        controller:"gridshopcontroller"
+    })
+    .when("/listshop",{
+        templateUrl:"../templates/listlayout/listylayout.html",
+        controller:"listshopcontroller"
+    })
+    .when("/shopnow",{
+        templateUrl:"../templates/shopnow/shopnow.html",
+        controller:"shopnowcontroller"
+    })
+    .when("/buy",{
+        templateUrl:"../templates/shopnow/shopnowform.html",
+        controller:"shopnowcontroller"
+    })
+    .when("/thanks",{
+        templateUrl:"../templates/shopnow/thankyou.html",
+        controller:"thankscontroller"
+    })
+    .otherwise({
+        redirectTo:"/home"
+    });
+    
+});
