@@ -1,1 +1,0 @@
-angular.module("controllermodule",["headermodule","footermodule","homemodule","aboutmodule","shopmodule"]);
