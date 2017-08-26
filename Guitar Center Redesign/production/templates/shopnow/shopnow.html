@@ -27,19 +27,8 @@
         </div><!--col-md-10-->
     </div><!--row-->
     <div class="container-fluid">
-        <div class="guitarCarousel col-md-offset-2 col-md-8">
-            <span ng-repeat="Gimage in imageCollection" ng-class="{next:nextButton,prev:prevButton}">
-                <img ng-src="{{Gimage}}" style="margin:5px 20px;display:inline-block;" class="thumbnail guitarimg" ng-click="changeimg(Gimage)">
-            </span>
-            
-        <button class="btn btn-danger carouselBtnLeft" ng-click="prev()" ng-disabled="firstElement">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        </button>
-        <button class="btn btn-danger carouselBtnRight" ng-click="next()" ng-disabled="lastElement">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </button>
-        </div>
-    </div><!--row-->    
+        <custom-carousel data="imagedata" changeimg="changeimg(img)"></custom-carousel>
+    </div><!--container-fluid-->    
         
        <uib-accordion>
             <uib-accordion-group class="panel-danger" heading="Product Description">

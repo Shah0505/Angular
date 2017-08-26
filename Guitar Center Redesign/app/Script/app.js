@@ -26,7 +26,7 @@ angular.module("GuitarApp",["controllermodule","ngRoute",'ui.bootstrap',"ngAnima
         controller:"shopnowcontroller"
     })
     .when("/thanks",{
-        templateUrl:"../templates/shopnow/thankyou.html",
+        templateUrl:"../templates/Thanks/thankyou.html",
         controller:"thankscontroller"
     })
     .otherwise({
